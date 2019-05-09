@@ -97,9 +97,9 @@ span { display: block; }
 	margin-top: 25px;
 }
 
-address {
-	font-style: normal;
-}
+address { font-style: normal; }
+
+/* .menu-toggle { display: none; } */
 
 /* =========== Lines ==================================== */
 .logo::after,
@@ -543,20 +543,22 @@ dfn:hover::before {opacity: 1;}
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 .about__photo {
-	min-width: 20%;
-	height: 240px;
+	min-width: 25%;
 	background: #d0d0d0;
 	margin-right: 3%;
 	border-radius: 7px 0 7px 7px;
+	overflow: hidden;
 }
 .about__description {
-	min-width: 77%;
+	min-width: 72%;
 }
 .about-me {
 	font-size: 20px;
-	line-height: 28px;
+	line-height: 34px;
 	color: #212121;
 }
 /* =========== Contact ================================== */
@@ -642,9 +644,6 @@ dfn:hover::before {opacity: 1;}
 		line-height: 30px;
 	}
 
-	.post-advanteges__other,
-	.about-me { font-size: 18px; }
-
 	.navigation { padding: 35px 0; }
 	.menu__item { margin-bottom: 12px; }
 	.menu__item--link { font-size: 20px; }
@@ -659,6 +658,14 @@ dfn:hover::before {opacity: 1;}
 
 	.heading-contact { width: 75%; }
 
+	.post-advanteges__other,
+	.about-me { font-size: 18px; }
+
+	.about__photo { min-width: 27%; }
+	.about__description { min-width: 70px; }
+
+	.about-me { line-height: 28px; }
+
 	.contacts { width: 170px; }
 	.contacts-social:first-child { margin-bottom: 14px; }
 	.contacts-social__item { margin-right: 14px; }
@@ -672,7 +679,33 @@ dfn:hover::before {opacity: 1;}
 }
 
 @media screen and (max-width: 1022px) {
-	.panel-aside { display: none; }
+	.menu-toggle {
+		background-color: #ff9187;
+		border: 0;
+		color: #fff;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+		outline: none;
+		position: fixed;
+		top: 300px;
+		left: 300px;
+	}
+
+	.panel-aside {
+		width: 40%;
+	  position: fixed;
+	  left: -40%;
+	  z-index: 99;
+	  transition: all .8s ;
+	}
+	.active {
+		display: block;
+	  left: 0;
+	  visibility: visible;
+	  transition-delay: 0s;
+	}
+	
 	.content {
 		width: 100vw;
 		margin-left: 0;
@@ -808,7 +841,7 @@ dfn:hover::before {opacity: 1;}
 
 	.about { display: block; }
 	.about__photo {
-		width: 100%;
+		width: 50%;
 		margin-right: 0;
 		border-radius: 0 7px 7px 7px;
 		margin-bottom: 15px;

@@ -1,6 +1,15 @@
 (function () {
 	'use strict';
 
+  //menu-toggle
+
+  var btn = document.querySelector('.menu-toggle');
+  var nav = document.querySelector('.panel-aside');
+
+  btn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+  });
+
   //smooth scroll
 
   var requestAnimationFrame = window.requestAnimationFrame ||
