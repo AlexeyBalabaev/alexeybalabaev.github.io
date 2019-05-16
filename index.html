@@ -13,15 +13,13 @@
 </head>
 <body>
 	
-<!-- Part aside [menu/social/author] ------------------------------>	
+<!-- Part aside -->
 <aside class="panel-aside">
 	<div class="wrapper-aside">
 		<header class="header">
 			<div class="logo">
 				<a href="#" class="logo__link"></a>
-				<div class="block"><</div>
 				<div class="block">ab</div>
-				<div class="block">/></div>
 			</div>
 			<nav class="navigation">
 				<ul class="menu">
@@ -52,7 +50,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link">
+						<a href="https://www.linkedin.com/in/alexey-balabaev-19b956184" class="social__item--link">
 							<dfn data-info="LinkedIn"><i class="icon-linkedin-squared"></i></dfn>
 						</a>
 					</li>
@@ -87,16 +85,20 @@
 	</div>
 </aside>
 
-<!-- Content part [main > all sections] --------------------------->
+<!-- Content part -->
 <main class="content">
 	
-<div>
-	<span class="menu-toggle"></span>
-</div>
-<div>
-	<span class="back-top" title="Наверх"><i class="icon-up"></i></span>
-</div>
-<!-- Section services --------------------------------------------->
+<!-- mobile menu -->
+	<div class="menu-toggle">
+		<span class="btn-menu"></span>
+	</div>
+
+<!-- back to top -->
+	<div class="back-top" >
+		<span title="Наверх"><i class="icon-up"></i></span>
+	</div>
+
+<!-- Section services -->
 	<section class="services-box sect">
 		<div class="wrapper">
 			<div class="services-heading">
@@ -149,7 +151,7 @@
 			</div>
 		</div>
 	</section>
-<!-- Section portfolio -------------------------------------------->
+<!-- Section portfolio -->
 	<section class="portfolio-box sect">
 		<div class="wrapper">
 			<div class="heading">
@@ -161,17 +163,17 @@
 			</div>
 			<div class="portfolio">
 				<div class="portfolio__item">
-					<a href="#" class="portfolio__item--link"></a>
+					<a href="#" class="js-open-modal portfolio__item--link" data-modal="1"></a>
 					<span class="info-link">i</span>
 					<img src="img/portfolio/brandly_pc.jpg" alt="" class="portfolio__item--img">
 				</div>
 				<div class="portfolio__item">
-					<a href="#" class="portfolio__item--link"></a>
+					<a href="#" class="js-open-modal portfolio__item--link" data-modal="2"></a>
 					<span class="info-link">i</span>
 					<img src="img/portfolio/golden_pc.jpg" alt="" class="portfolio__item--img">
 				</div>
 				<div class="portfolio__item">
-					<a href="#" class="portfolio__item--link"></a>
+					<a href="#" class="js-open-modal portfolio__item--link" data-modal="3"></a>
 					<span class="info-link">i</span>
 					<img src="img/portfolio/mini_pc.jpg" alt="" class="portfolio__item--img">
 				</div>
@@ -179,10 +181,28 @@
 					<a href="#" class="more-works__link1"></a>
 					<a href="#" class="more-works__link2">Больше работ</a>
 				</div> -->
+
+				<!-- Элементы для вызова модальных окон, могут быть любые -->
 			</div>
 		</div>
+
+<!-- modal windows -->
+	<div class="modal" data-modal="1">
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+		<p class="modal__title">Заголовок окна 1</p>
+	</div>
+	<div class="modal" data-modal="2">
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+		<p class="modal__title">Заголовок окна 2</p>
+	</div>
+	<div class="overlay js-overlay-modal"></div>
+	<div class="modal" data-modal="3">
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+		<p class="modal__title">Заголовок окна 3</p>
+	</div>
+	<div class="overlay js-overlay-modal"></div>
 	</section>
-<!-- Section advanteges ------------------------------------------->
+<!-- Section advanteges -->
 	<section class="advanteges-box sect">
 		<div class="wrapper">
 			<div class="heading">
@@ -220,7 +240,7 @@
 			</p>
 		</div>
 	</section>
-<!-- Section about me --------------------------------------------->
+<!-- Section about me -->
 	<section class="about-me-box sect">
 		<div class="wrapper">
 			<div class="heading">
@@ -248,7 +268,7 @@
 			</div>
 		</div>
 	</section>
-<!-- Section contact ---------------------------------------------->
+<!-- Section contact -->
 	<address class="contact-box sect">
 		<div class="wrapper">
 			<div class="contact-head">
@@ -265,7 +285,9 @@
 							<a href="#" class="contacts-social__item--link"><i class="icon-facebook-squared"></i></a>
 						</li>
 						<li class="contacts-social__item">
-							<a href="#" class="contacts-social__item--link"><i class="icon-linkedin-squared"></i></a>
+							<a href="https://www.linkedin.com/in/alexey-balabaev-19b956184" class="contacts-social__item--link">
+								<i class="icon-linkedin-squared"></i>
+							</a>
 						</li>
 						<li class="contacts-social__item">
 							<a href="#" class="contacts-social__item--link"><i class="icon-mail-alt"></i></a>
@@ -315,7 +337,7 @@
 		</div>
 	</address>
 </main>
-<!-- Optional JavaScript ------------------------------------------>
+<!-- Optional JavaScript -->
 
 <script src="js/custom.js"></script>
 </body>

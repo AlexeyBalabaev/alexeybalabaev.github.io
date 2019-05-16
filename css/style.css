@@ -99,7 +99,71 @@ span { display: block; }
 
 address { font-style: normal; }
 
-/* .menu-toggle { display: none; } */
+/* modal window */
+
+.overlay {
+   
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+/* Стили для модальных окон */
+
+.modal {
+   
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   
+   
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 500px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
 
 /* =========== Lines ==================================== */
 .logo::after,
@@ -287,9 +351,8 @@ textarea:focus::-moz-input-placeholder { color: transparent; }
 	bottom: 0;
 }
 
-.block {
-	display: inline-block;
-}
+.block::before { content: '<'; }
+.block::after { content: '/>'; }
 
 .navigation { padding: 45px 0; }
 .menu__item { margin-bottom: 30px; }
@@ -302,6 +365,7 @@ textarea:focus::-moz-input-placeholder { color: transparent; }
 	letter-spacing: .2px;
 	padding: 10px 0;
 	position: relative;
+	cursor: pointer;
 }
 .menu__item--link::before {
 	display: block;
@@ -480,6 +544,7 @@ dfn:hover::before {opacity: 1;}
 	-webkit-transition: all .4s;
 	-o-transition: all .4s;
 	transition: all .4s;
+	z-index: 1;
 }
 
 .portfolio__item:hover .portfolio__item--link {
@@ -607,10 +672,16 @@ dfn:hover::before {opacity: 1;}
 
 .contacts-social__item { margin-right: 20px; }
 .contacts-social__item:last-child { margin-right: 0; }
+
 .contacts-social__item--link {
 	font-size: 35px;
 	color: #212121;
+	transition: all .3s;
 }
+.contacts-social__item--link:hover {
+	color: #7dc8ff;
+}
+
 .form-box {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -683,28 +754,112 @@ dfn:hover::before {opacity: 1;}
 		background-color: #ff9187;
 		border: 0;
 		color: #fff;
-		padding: 10px 20px;
+		width: 115px;
+		padding: 20px 15px;
 		text-transform: uppercase;
 		cursor: pointer;
 		outline: none;
-		position: fixed;
-		top: 300px;
-		left: 300px;
+		position: absolute;
+		top: 10px;
+		right: 5px;
+		transition: all .8s;
+		opacity: .8;
+		z-index: 10;
+		border-radius: 7px 0 7px 7px;
+	}
+
+	.btn-menu {
+		width: 25px;
+		height: 4px;
+		background: #212121;
+		position: relative;
+	}
+
+	.btn-menu::before {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 12px;
+		position: absolute;
+		top: -8px;
+		left: -3px;
+		border-top: 4px solid #212121;
+		border-bottom: 4px solid #212121;
+		transition: all .8s;
+	}
+	.btn-menu::after {
+		content: 'menu';
+		text-transform: uppercase;
+		display: block;
+		position: absolute;
+		top: -10px;
+		right: -65px;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 20px;
+		color: #212121;
+	}
+
+	.active-btn { top: 50vh; }
+
+	.active-btn >.btn-menu { transform: rotate(45deg); }
+	.active-btn > .btn-menu::before {
+		border: transparent;
+		width: 25px;
+		height: 4px;
+		background: #212121;
+		transform: rotate(-90deg);
+		top: 0;
+		left: 0px;
+	}
+	.active-btn > .btn-menu::after {
+		content: 'close';
+		transform: rotate(-45deg);
+		right: -50px;
+		top: -45px;
 	}
 
 	.panel-aside {
-		width: 40%;
-	  position: fixed;
-	  left: -40%;
-	  z-index: 99;
-	  transition: all .8s ;
+		width: 100vw;
+		height: 50vh;
+		position: absolute;
+		left: 0;
+		top: -50vh;
+		z-index: 99;
+		transition: all .8s;
 	}
+
 	.active {
 		display: block;
-	  left: 0;
-	  visibility: visible;
-	  transition-delay: 0s;
+		top: 0;
 	}
+
+	.wrapper-aside {
+		margin: auto 35px;
+		height: 50vh;
+	}
+
+	.header {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		position: relative;
+	}
+
+	.logo {
+		width: 18%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.logo::after,
+	.social-box::before { display: none; }
+
+	.social__item { margin-right: 4vw; }
+
+	.footer { padding-bottom: 45px; }
 	
 	.content {
 		width: 100vw;
@@ -721,12 +876,14 @@ dfn:hover::before {opacity: 1;}
 
 	.back-top {
 		bottom: 5px;
-		left: 5px;
+		right: 5px;
+		left: auto;
 		width: 60px;
 		height: 60px;
 		line-height: 60px;
 		opacity: .8;
 		font-size: 25px;
+		border-radius: 7px 7px 0 7px;
 	}
 
 	.portfolio {
@@ -756,7 +913,7 @@ dfn:hover::before {opacity: 1;}
 	.author-mob {
 		display: block;
 		position: absolute;
-		right: 0;
+		left: 0;
 		bottom: -50px;
 	}
 
