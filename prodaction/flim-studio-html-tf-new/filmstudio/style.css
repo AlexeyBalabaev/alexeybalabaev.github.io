@@ -50,7 +50,7 @@
 
 /* ============= 1. About Us ============= */
 .aboutus-video  {
-  background: #url(../../img/about.jpg) repeat scroll 50% 0 / cover;
+  background: url(img/about.jpg) no-repeat scroll 50% 0 / cover;
   box-sizing: border-box;
   display: inline-block;
   height: 620px;
