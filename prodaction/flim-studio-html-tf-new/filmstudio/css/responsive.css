@@ -178,6 +178,9 @@ top: 48%;
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+.sticky .address-head { top: 25px; }
+.sticky { height: 130px; }
+
 .mobile-menu-area {
   display: block;
 }
@@ -470,6 +473,15 @@ top: 48%;
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+.sticky { height: 160px; }
+.sticky .logo-img {
+  top: -30px;
+  left: 10%;
+}
+.sticky .mean-container .mean-bar { top: 112px; }
+
+.logo-img img { width: 70%; }
+
 .container {width:300px}
 .main-menu {
   display: none;
@@ -507,6 +519,9 @@ top: 48%;
 }
 .aboutus-titel > h2 {
   font-size: 26px;
+}
+.aboutus-video {
+  height: 300px;
 }
 .indicator-style .owl-carousel .owl-nav .owl-prev {
   left: -5px;

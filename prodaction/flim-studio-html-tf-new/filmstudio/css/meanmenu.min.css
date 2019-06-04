@@ -14,9 +14,11 @@ a.meanmenu-reveal{display:none}
   min-height: 42px;
   padding: 0;
   position: relative;
+  top: 60px;
   width: 100%;
   z-index: 999999;
 }
+.sticky .mean-container .mean-bar { top: 80px; }
 .mean-container a.meanmenu-reveal{width:22px;height:22px;padding:13px 13px 11px;top:0;right:0;cursor:pointer;color:#fff;text-decoration:none;font-size:16px;text-indent:-9999em;line-height:22px;font-size:1px;display:block;font-family:Arial,Helvetica,sans-serif;font-weight:700;float: right;}
 .mean-container a.meanmenu-reveal span{display:block;background:#fff;height:3px;margin-top:3px}
 .mean-container .mean-nav{float:left;width:100%;background:#0c1923}

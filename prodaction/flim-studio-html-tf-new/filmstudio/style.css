@@ -35,18 +35,27 @@
 /* ============= Contact head ============= */
 .address-head {
   position: absolute;
-  top: 0;
+  top: -20px;
   width: 100%;
   z-index: 999;
 }
 .address-item {
   display: block;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: #fff;
   text-align: right;
   padding-right: 15px;
 }
+
+.menu-head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sticky .address-head { top: 5px; }
+.sticky .menu-head { top: 30px; }
 
 /* ============= 1. About Us ============= */
 .aboutus-video  {
@@ -2343,6 +2352,8 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address-head { top: -35px; }
+
   .portfolio-details-info {
     margin-top: 50px;
   }
@@ -2362,12 +2373,13 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
 }
 
 @media only screen and (max-width: 767px) {
-  .address-head { top: 295px; }
+  .address-head { top: 125px; }
   .address-item {
     text-align: center;
     padding-right: 0;
   }
-  .address-head-main { top: 505px; }
+  .tel { display: block; }
+  .sticky .address-head { top: 50px; }
 
   .portfolio-details-info {
     margin-top: 50px;
