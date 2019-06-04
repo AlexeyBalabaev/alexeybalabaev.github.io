@@ -1,0 +1,15 @@
+Date:    25-01-2019
+
+Version: 2.0.0
+===================
+
+1. Included       :     Revolution Slider
+2. Included       :     Campaign Home Page
+3. Included       :     Film Production Home Page
+4. Included       :     Movie Production Home Page
+5. Included       :     Four Home Page Black Version
+6. Included       :     Water Ripple Effect
+7. Updated        :     Slider
+8. Updated        :     Three Home Page
+9. Improved       :     Responsive
+10. Improved      :     CSS Style
