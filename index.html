@@ -3,10 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scable=no">
 	<title>Alexey Balabev</title>
+
+<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+
+<!-- CSS links -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/fontello-embedded.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -65,7 +70,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link">
+						<a href="https://www.instagram.com/pandos_88/" class="social__item--link">
 							<dfn data-info="Instagram"><i class="icon-instagram"></i></dfn>
 						</a>
 					</li>
@@ -177,59 +182,60 @@
 					<span class="info-link">i</span>
 					<img src="img/portfolio/mini_pc.jpg" alt="" class="portfolio__item--img">
 				</div>
-				<!-- <div class="portfolio__item more-works">
-					<a href="#" class="more-works__link1"></a>
-					<a href="#" class="more-works__link2">Больше работ</a>
-				</div> -->
+				<div class="portfolio__item more-works">
+					<a href="#" class="more-works__link"></a>
+					<span class="more-works__desc">Больше работ</span>
+				</div>
 
 			</div>
 		</div>
 
 <!-- Modal windows -->
-	<div class="modal" data-modal="1">
-		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-		<div class="modal__item">
-			<div class="modal__item--left">
-				<h4 class="modal-title">Сайт моды - BrandLY</h4>
-				<p class="modal-desc">Сайт о моде, некоторых коллекционных вещах и обо всем самом новом.</p>
-				<span class="modal-stack">HTML, CSS, JS, jQuery</span>
-				<a href="portfolio-examples/brandly/index.html" class="modal-link">Перейти на сайт</a>
-			</div>
-			<div class="bodal__item--right">
-				<img src="img/portfolio/brandly_pc.jpg" alt="" class="modal-img">
-			</div>
-		</div>
-	</div>
-	<div class="modal" data-modal="2">
-		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-		<div class="modal__item">
-			<div class="modal__item--left">
-				<h4 class="modal-title">Сайт команды - Golden One</h4>
-				<p class="modal-desc">Сайт о студии дизайнеров. Их небольшая история о становлении их команды.</p>
-				<span class="modal-stack">HTML, CSS</span>
-				<a href="portfolio-examples/golden-one/index.html" class="modal-link">Перейти на сайт</a>
-			</div>
-			<div class="bodal__item--right">
-				<img src="img/portfolio/golden_pc.jpg" alt="" class="modal-img">
+	<div class="modal-wrapper">
+		<div class="modal" data-modal="1">
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+			<div class="modal__item">
+				<div class="modal__item--top">
+					<h4 class="modal-title">Сайт моды - BrandLY</h4>
+					<p class="modal-desc">Сайт о моде, некоторых коллекционных вещах и обо всем самом новом.</p>
+					<span class="modal-stack">HTML, CSS, JS, jQuery</span>
+					<a href="portfolio-examples/brandly/index.html" class="modal-link">Перейти на сайт</a>
+				</div>
+				<div class="modal__item--bottom">
+					<img src="img/portfolio/brandly.jpg" alt="" class="modal-img">
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="overlay js-overlay-modal"></div>
-	<div class="modal" data-modal="3">
-		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-		<div class="modal__item">
-			<div class="modal__item--left">
-				<h4 class="modal-title">Тренировочный сайт по верстке</h4>
-				<p class="modal-desc">Сайт на котором тренировал верстку. Не маленький и примененено много полезных "фишек".</p>
-				<span class="modal-stack">HTML, CSS, JS, jQuery</span>
-				<a href="portfolio-examples/mini/index.html" class="modal-link">Перейти на сайт</a>
-			</div>
-			<div class="bodal__item--right">
-				<img src="img/portfolio/mini_pc.jpg" alt="" class="modal-img">
+		<div class="modal" data-modal="2">
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+			<div class="modal__item">
+				<div class="modal__item--top">
+					<h4 class="modal-title">Сайт команды - Golden One</h4>
+					<p class="modal-desc">Сайт о студии дизайнеров. Их небольшая история о становлении их команды.</p>
+					<span class="modal-stack">HTML, CSS</span>
+					<a href="portfolio-examples/golden-one/index.html" class="modal-link">Перейти на сайт</a>
+				</div>
+				<div class="modal__item--bottom">
+					<img src="img/portfolio/golden_pc.jpg" alt="" class="modal-img">
+				</div>
 			</div>
 		</div>
+		<div class="modal" data-modal="3">
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+			<div class="modal__item">
+				<div class="modal__item--top">
+					<h4 class="modal-title">Тренировочный сайт по верстке</h4>
+					<p class="modal-desc">Сайт на котором тренировал верстку. Не маленький и примененено много полезных "фишек".</p>
+					<span class="modal-stack">HTML, CSS, JS, jQuery</span>
+					<a href="portfolio-examples/mini/index.html" class="modal-link">Перейти на сайт</a>
+				</div>
+				<div class="modal__item--bottom">
+					<img src="img/portfolio/mini_pc.jpg" alt="" class="modal-img">
+				</div>
+			</div>
+		</div>
+		<div class="overlay js-overlay-modal"></div>
 	</div>
-	<div class="overlay js-overlay-modal"></div>
 	</section>
 <!-- Section advanteges -->
 	<section class="advanteges-box sect">
@@ -311,12 +317,10 @@
 				<div class="contacts">
 					<ul class="contacts-social">
 						<li class="contacts-social__item">
-							<a href="#" class="contacts-social__item--link"><i class="icon-facebook-squared"></i></a>
+							<a href="https://www.facebook.com/aleksey.balabaev.5" class="contacts-social__item--link"><i class="icon-facebook-squared"></i></a>
 						</li>
 						<li class="contacts-social__item">
-							<a href="https://www.linkedin.com/in/alexey-balabaev-19b956184" class="contacts-social__item--link">
-								<i class="icon-linkedin-squared"></i>
-							</a>
+							<a href="https://www.linkedin.com/in/alexey-balabaev-19b956184" class="contacts-social__item--link"><i class="icon-linkedin-squared"></i></a>
 						</li>
 						<li class="contacts-social__item">
 							<a href="#" class="contacts-social__item--link"><i class="icon-mail-alt"></i></a>
@@ -324,7 +328,7 @@
 					</ul>
 					<ul class="contacts-social">
 						<li class="contacts-social__item">
-							<a href="#" class="contacts-social__item--link"><i class="icon-vkontakte"></i></a>
+							<a href="https://vk.com/id68130310" class="contacts-social__item--link"><i class="icon-vkontakte"></i></a>
 						</li>
 						<li class="contacts-social__item">
 							<a href="#" class="contacts-social__item--link"><i class="icon-telegram"></i></a>
@@ -339,7 +343,7 @@
 				</div>
 			</div>
 			<div class="form">
-				<form action="#" class="">
+				<form action="#" metho="post">
 					<div class="form-box">
 						<div class="left-form">
 							<input type="text" id="name" class="name" required>
@@ -361,7 +365,7 @@
 					<a href="https://github.com/AlexeyBalabaev/Alexey-Balabaev-site">
 						<span>@ Alexey Balabaev</span>
 					</a>
-					<a href="prodaction/flim-studio-html-tf-new/filmstudio/index-3.html">Ссылка</a>
+					<a href=""></a>
 				</div>
 			</div>
 		</div>

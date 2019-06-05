@@ -96,8 +96,8 @@
 
       var modalId = this.getAttribute('data-modal'),
       modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
-      modalElem.classList.add('active');
-      overlay.classList.add('active');
+      modalElem.classList.add('active-modal');
+      overlay.classList.add('active-modal');
     });
 
   });
@@ -107,8 +107,8 @@
     item.addEventListener('click', function(e) {
       var parentModal = this.closest('.modal');
 
-      parentModal.classList.remove('active');
-      overlay.classList.remove('active');
+      parentModal.classList.remove('active-modal');
+      overlay.classList.remove('active-modal');
     });
 
   });
@@ -117,14 +117,14 @@
     var key = e.keyCode;
 
     if (key == 27) {
-      document.querySelector('.modal.active').classList.remove('active');
-      document.querySelector('.overlay').classList.remove('active');
+      document.querySelector('.modal.active-modal').classList.remove('active-modal');
+      document.querySelector('.overlay').classList.remove('active-modal');
     };
   }, false);
 
   overlay.addEventListener('click', function() {
-    document.querySelector('.modal.active').classList.remove('active');
-    this.classList.remove('active');
+    document.querySelector('.modal.active-modal').classList.remove('active-modal');
+    this.classList.remove('active-modal');
   });
 
 });
