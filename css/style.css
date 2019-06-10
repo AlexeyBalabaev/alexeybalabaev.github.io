@@ -17,7 +17,7 @@ body {
 }
 
 h2,
-h3 {
+h6 {
 	font-family: 'Playfair Display', serif; 
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -25,7 +25,7 @@ h3 {
 
 h2 { font-size: 42px; }
 
-h3 { font-size: 26px; }
+h6 { font-size: 26px; }
 
 li { list-style: none; }
 
@@ -93,8 +93,6 @@ span { display: block; }
 	margin-top: 25px;
 }
 
-address { font-style: normal; }
-
 /* =========== Lines ==================================== */
 .logo::after,
 .social-box::before {
@@ -134,8 +132,8 @@ address { font-style: normal; }
 /* =========== Form ================================== */
 input[type="text"],
 textarea {
-	background: #cccccc;
-	border: 1px solid #212121;
+	background: #fff;
+	border: 2px solid #212121;
 	width: 100%;
 	outline: none;
 	font-family: 'Fira Sans', sans-serif;
@@ -793,7 +791,7 @@ dfn:hover::before {opacity: 1;}
 
 @media screen and (max-width: 1370px) {
 	h2 { font-size: 36px; }
-	h3 { font-size: 24px; }
+	h6 { font-size: 24px; }
 	p { font-size: 14px; }
 
 	.heading { margin-top: 50px; }
@@ -1038,7 +1036,7 @@ dfn:hover::before {opacity: 1;}
 
 @media screen and (max-width: 765px) {
 	h2 { font-size: 26px; }
-	h3 { font-size: 18px; }
+	h6 { font-size: 18px; }
 	p {
 		font-size: 12px;
 		line-height: 20px;
