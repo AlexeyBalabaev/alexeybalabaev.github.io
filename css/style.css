@@ -122,7 +122,7 @@ span { display: block; }
 	overflow: hidden;
 	border-radius: 5px 5px 5px 0;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 100;
 }
 
 .back-top-show {
@@ -214,7 +214,6 @@ textarea:focus::-moz-input-placeholder { color: transparent; }
 	font-size: 22px;
 	color: #212121;
 	cursor: pointer;
-	outline: none;
 	overflow: hidden;
   position: relative;
 }
@@ -469,7 +468,7 @@ dfn:hover::before {opacity: 1;}
 
 .portfolio__item {
 	width: 33%;
-	height: 50%;
+	height: 12vw;
 	margin-right: .5%;
 	margin-bottom: 10px;
 	overflow: hidden;
@@ -479,7 +478,7 @@ dfn:hover::before {opacity: 1;}
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
 	position: relative;
 }
-.portfolio__item:nth-child(3) {
+.portfolio__item:nth-child(3n) {
 	margin-right: 0;
 	border-radius: 0 7px 7px 7px;
 }
@@ -519,7 +518,6 @@ dfn:hover::before {opacity: 1;}
 
 .more-works {
 	position: relative;
-	height: 12vw;
 	-webkit-box-shadow: 0 0 0 transparent;
 	box-shadow: 0 0 0 transparent;
 }
@@ -554,11 +552,12 @@ dfn:hover::before {opacity: 1;}
 	transition: width .4s, height .4s, line-height .4s;
 }
 .more-works__link:hover + .more-works__desc {
-	width: 150px;
-	height: 45px;
+	width: 85%;
+	height: 85%;
+	line-height: 9.5vw;
 	top: 50%;
 	left: 50%;
-	line-height: 45px;
+  transform: translate(-50%, -50%);
 }
 
 /* modal window */
@@ -909,10 +908,10 @@ dfn:hover::before {opacity: 1;}
 
 	.panel-aside {
 		width: 100vw;
-		height: 50vh;
+		height: 350px;
 		position: absolute;
 		left: 0;
-		top: -50vh;
+		top: -350px;
 		z-index: 99;
 		-webkit-transition: all .8s;
 		-o-transition: all .8s;
@@ -926,7 +925,7 @@ dfn:hover::before {opacity: 1;}
 
 	.wrapper-aside {
 		margin: auto 35px;
-		height: 50vh;
+		height: 350px;
 	}
 
 	.header {
@@ -1000,6 +999,7 @@ dfn:hover::before {opacity: 1;}
 	}
 	.portfolio__item:nth-child(3),
 	.portfolio__item:last-child { margin-bottom: 0; }
+	.more-works { margin-top: 10px; }
 
 	.modal {
 		max-width: 85vw;
@@ -1044,7 +1044,7 @@ dfn:hover::before {opacity: 1;}
 
 	.wrapper { padding: 0 10px; }
 
-	.heading, .services-heading { margin: 35px auto 10px 0; }
+	.heading, .services-heading { margin: 35px auto 20px 0; }
 
 	.post-head {
 		font-size: 18px;
@@ -1107,7 +1107,7 @@ dfn:hover::before {opacity: 1;}
 
 	.modal {
 		max-width: 95vw;
-		height: 60vh;
+		height: 280px;
 		padding: 45px 10px 10px;
 	}
 	.modal__item--top { margin-bottom: 0; }

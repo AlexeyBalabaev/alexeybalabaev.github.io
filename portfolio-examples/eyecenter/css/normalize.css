@@ -19,13 +19,13 @@ html { height: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;
 
 input, textarea { color: #333; outline: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; }
 
-input[type="button"], input[type="submit"] { cursor: pointer; -webkit-appearance: none; }
+input[type="button"], input[type="submit"] { cursor: pointer; -webkit-appearance: none; outline: none; }
 
-button { cursor: pointer; -webkit-appearance: none; }
+button { cursor: pointer; -webkit-appearance: none; outline: none; }
 
 td, form { margin: 0px; padding: 0px; }
 
-a { color: #000100; -webkit-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; text-decoration: none; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; }
+a { color: #000100; -webkit-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; text-decoration: none; outline: none; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }

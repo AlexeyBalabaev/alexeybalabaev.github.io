@@ -1,0 +1,30 @@
+
+@font-face {
+	font-family: 'Circe-Bold';
+	src: url('../fonts/Circe-Bold.eot');
+	src: local('☺'), url('../fonts/Circe-Bold.woff') format('woff'), url('../fonts/Circe-Bold.ttf') format('truetype'), url('../fonts/Circe-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Phenomena-Regular';
+	src: url('../fonts/Phenomena-Regular.eot');
+	src: local('☺'), url('../fonts/Phenomena-Regular.woff') format('woff'), url('../fonts/Phenomena-Regular.ttf') format('truetype'), url('../fonts/Phenomena-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Phenomena-Bold';
+	src: url('../fonts/Phenomena-Bold.eot');
+	src: local('☺'), url('../fonts/Phenomena-Bold.woff') format('woff'), url('../fonts/Phenomena-Bold.ttf') format('truetype'), url('../fonts/Phenomena-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Phenomena-ExtraBold';
+	src: url('../fonts/Phenomena-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Phenomena-ExtraBold.woff') format('woff'), url('../fonts/Phenomena-ExtraBold.ttf') format('truetype'), url('../fonts/Phenomena-ExtraBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
