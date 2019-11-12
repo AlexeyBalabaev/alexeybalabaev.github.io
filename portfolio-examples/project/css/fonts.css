@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Museo-700';
+  src: url('../fonts/Museo-700.eot');
+  src: url('../fonts/Museo-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Museo-700.svg#Museo-700') format('svg'),
+       url('../fonts/Museo-700.ttf') format('truetype'),
+       url('../fonts/Museo-700.woff') format('woff'),
+       url('../fonts/Museo-700.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TektonPro-BoldCond';
+  src: url('../fonts/TektonPro-BoldCond.eot');
+  src: url('../fonts/TektonPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/TektonPro-BoldCond.svg#TektonPro-BoldCond') format('svg'),
+       url('../fonts/TektonPro-BoldCond.ttf') format('truetype'),
+       url('../fonts/TektonPro-BoldCond.woff') format('woff'),
+       url('../fonts/TektonPro-BoldCond.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
