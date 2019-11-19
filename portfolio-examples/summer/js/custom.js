@@ -50,21 +50,14 @@ $(document).ready(function() {
 		]
 	});
 
-	const $menu = $('.menu-toggle');
+	var $menu = $('.menu-toggle');
 
-	$(document).mouseup(e => {
-		if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
-			$menu.removeClass('is-active');
-		}
-	});
-
-	$(".nav-list__item--link").on('click', () => {
+	$(".nav-list__item--link").on('click', function() {
     $menu.removeClass('is-active');
 	});
 
-	$('.nav-button').on('click', () => {
+	$('.nav-button').on('click', function() {
 		$menu.toggleClass('is-active');
 	});
-
 
 });

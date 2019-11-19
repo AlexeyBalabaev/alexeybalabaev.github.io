@@ -69,4 +69,20 @@ $(function() {
 		}
 	});
 
+	var $menu = $('.menu-toggle');
+
+	$(document).mouseup(e => {
+		if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
+			$menu.removeClass('is-active');
+		}
+	});
+
+	$(".nav-list__item--link").on('click', () => {
+    $menu.removeClass('is-active');
+	});
+
+	$('.nav-button').on('click', () => {
+		$menu.toggleClass('is-active');
+	});
+
 });

@@ -4,20 +4,28 @@
   <meta charset="UTF-8">
   <title>Summer</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css?family=Signika+Negative:400,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/fontello-ie7.css">
   <link rel="stylesheet" href="css/fontello-embedded.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lte IE 9]> <link rel="stylesheet" href="css/ie9.css"> <![endif]-->
+  <!--[if lte IE 8]> <link rel="stylesheet" href="css/ie8.css"> <![endif]-->
+  <!--[if lte IE 7]> <link rel="stylesheet" href="css/ie7.css"> <![endif]-->
+
 </head>
 <body>
 
@@ -113,8 +121,11 @@ venen atis magna nulla opti amon.</h1>
 nascetur ridiculus mus. Maecenas sed diam eget risus varius blan 
 ndit sit amet non magna. Nullam id dolor.</p>
           <div class="main-box__video">
-            <a class="popup-youtube main-box__video--link" href="https://www.youtube.com/watch?v=Ckom3gf57Yw"></a>
+            <a class="popup-youtube main-box__video--link" href="https://www.youtube.com/watch?v=Ckom3gf57Yw">
+              <img src="image/video.jpg" alt="" class="main-box__video--link-img">
+            </a>
             <span class="main-box__video--prompt">App showcase</span>
+            <div class="cf"></div>
           </div>
           <span class="main-box__conditions">Download 30-day trial version via Appstore.</span>
           <div class="main-box__buttons">
@@ -129,7 +140,9 @@ ndit sit amet non magna. Nullam id dolor.</p>
 
   <section class="features">
     <div class="wrapper">
-      <h2 class="section-heading">Best features</h2>
+      <div class="section-heading">
+        <h2 class="section-heading__title">Best features</h2>
+      </div>
       <ul class="features-box">
         <li class="features-box__item">
           <div class="features-box__item--top">
@@ -163,7 +176,7 @@ ndit sit amet non magna. Nullam id dolor.</p>
           <p class="features-box__item--desc">Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele</p>
           <a href="#" class="features-box__item--link">More info</a>
         </li>
-        <li class="features-box__item">
+        <li class="features-box__item last-item">
           <div class="features-box__item--top">
             <img src="image/features/protect.png" alt="" class="features-box__item--top-image">
             <span class="features-box__item--top-name">Best protection</span>
@@ -179,7 +192,9 @@ ndit sit amet non magna. Nullam id dolor.</p>
     <div class="wrapper">
       <ul class="sect-box">
         <li class="sect-box__part">
-          <h2 class="section-heading">Show case</h2>
+          <div class="section-heading case-heading">
+            <h2 class="section-heading__title">Show case</h2>
+          </div>
           <ol class="case">
             <li class="case__picture">
               <a class="image-popup-no-margins case__picture--link" href="https://i0.wp.com/prexplore.ru/wp-content/uploads/2018/05/thomas-lefebvre-3950-unsplash-1024x683.jpg" title="This is our best case.">
@@ -203,8 +218,10 @@ ndit sit amet non magna. Nullam id dolor.</p>
             </li>
           </ol>
         </li>
-        <li class="sect-box__part">
-          <h2 class="section-heading">News</h2>
+        <li class="sect-box__part sect-news">
+          <div class="section-heading">
+            <h2 class="section-heading__title">News</h2>
+          </div>
           <ul class="news">
             <li class="news__elem">
               <div class="news__elem--date">
@@ -219,6 +236,7 @@ Etiam porta sem malesuada magna mollis euismod. Nullam quis
 risus eget urna mollis ornare vel eu leo. Etiam porta sem </p>
                 <button class="btn news-button">Read more</button>
               </div>
+              <div class="cf"></div>
             </li>
             <li class="news__elem">
               <div class="news__elem--date">
@@ -233,6 +251,7 @@ Etiam porta sem malesuada magna mollis euismod. Nullam quis
 risus eget urna mollis ornare vel eu leo. Etiam porta sem </p>
                 <button class="btn news-button">Read more</button>
               </div>
+              <div class="cf"></div>
             </li>
             <li class="news__elem">
               <div class="news__elem--date">
@@ -247,16 +266,20 @@ Etiam porta sem malesuada magna mollis euismod. Nullam quis
 risus eget urna mollis ornare vel eu leo. Etiam porta sem </p>
                 <button class="btn news-button">Read more</button>
               </div>
+              <div class="cf"></div>
             </li>
           </ul>
         </li>
       </ul>
+      <div class="cf"></div>
     </div>
   </section>
 
   <section class="comments">
     <div class="wrapper">
-      <h2 class="section-heading comment-sect">What people say</h2>
+      <div class="section-heading comment-sect">
+        <h2 class="section-heading__title comment-heading">What people say</h2>
+      </div>
       <div class="comment-box">
         <div class="comment-box__item">
           <p class="comment-box__item--message"><span class="message-bold">Best app ever bro!</span> Etiam porta sem 
@@ -383,7 +406,7 @@ risus eget urna mollis ornare vel eu leo. Etiam porta sem </p>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/custom.js"></script>

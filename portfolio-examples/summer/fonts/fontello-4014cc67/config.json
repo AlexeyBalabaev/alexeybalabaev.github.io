@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "8870252f5da59a63564fb6790a347c8e",
+      "css": "linkedin-rect",
+      "code": 62226,
+      "src": "websymbols"
+    },
+    {
+      "uid": "a25ef3626c7bd7031709a8264f280bfe",
+      "css": "skype",
+      "code": 62219,
+      "src": "websymbols"
+    },
+    {
+      "uid": "b1ec8e90c2c85cf0035849980a3789b3",
+      "css": "twitter",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "6f7586c6f99798c3c1de6123d1f6cfa9",
+      "css": "facebook",
+      "code": 59393,
+      "src": "zocial"
+    },
+    {
+      "uid": "003ba8187d6b00ec3e1ba75d00f1246a",
+      "css": "dribbble",
+      "code": 59394,
+      "src": "zocial"
+    }
+  ]
+}
